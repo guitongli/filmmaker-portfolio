@@ -1,0 +1,63 @@
+@import "config";
+@import "home";
+@import "pane";
+@import "menu";
+
+body {
+	background-color: $almost-black;
+	color: $edgy-white;
+	width: 100vw;
+	font-family: "Kanit", sans-serif;
+}
+
+h1 {
+	font-family: "Secular One", sans-serif;
+
+	font-weight: 800;
+}
+h2 {
+	font-family: "Kanit", sans-serif;
+}
+h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+header {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	padding: 1rem;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+}
+
+.contact {
+	position: fixed;
+	bottom: 1rem;
+	left: 1rem;
+	a {
+		padding: 0.4rem;
+		@include transition-ease;
+
+		&:hover {
+			color: $edgy-white;
+		}
+	}
+}
+
+footer {
+	font-size: 1rem;
+	position: fixed;
+	bottom: 0.4rem;
+	right: 1rem;
+	text-align: right;
+	padding: 1rem;
+	color: #fff;
+}

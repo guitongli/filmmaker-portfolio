@@ -1,0 +1,20 @@
+@import "config";
+.home {
+	height: 100%;
+	padding-top: 40vh;
+	overflow: hidden;
+	align-items: center;
+	text-align: center;
+	background: $almost-black;
+
+	& h1 {
+		font-size: 5rem;
+		padding-bottom: 1rem;
+		margin-top: 1rem;
+		border-bottom: 2px white solid;
+	}
+	&--last {
+		color: $edgy-white;
+		font-weight: 700;
+	}
+}
