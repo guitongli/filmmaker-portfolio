@@ -1,20 +1,51 @@
 @import "config";
-.home {
-	height: 100%;
-	padding-top: 40vh;
-	overflow: hidden;
-	align-items: center;
-	text-align: center;
-	background: $almost-black;
+// .home {
+// 	height: 100%;
+// 	padding-top: 40vh;
+// 	// overflow: hidden;
+// 	align-items: center;
+// 	text-align: center;
+// 	background: $almost-black;
 
-	& h1 {
+// 	& h1 {
+// 		font-size: 5rem;
+// 		padding-bottom: 1rem;
+// 		margin-top: 1rem;
+// 		border-bottom: 2px white solid;
+// 	}
+// 	&--last {
+// 		color: $edgy-white;
+// 		font-weight: 700;
+// 	}
+// }
+
+.home {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background: transparent;
+	&__video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: 50% 50%;
+		z-index: -1;
+	}
+	h1 {
+		padding-left: 40px;
+		position: relative;
+		top: 60vh;
+		// display: inline-block;
+		text-align: start;
+
 		font-size: 5rem;
 		padding-bottom: 1rem;
 		margin-top: 1rem;
-		border-bottom: 2px white solid;
-	}
-	&--last {
-		color: $edgy-white;
-		font-weight: 700;
+		color: rgba(233, 233, 233, 0.9);
 	}
 }

@@ -2,7 +2,7 @@
 @import "home";
 @import "pane";
 @import "menu";
-
+@import "responsive";
 body {
 	background-color: $almost-black;
 	color: $edgy-white;
@@ -38,7 +38,7 @@ main {
 	width: 100%;
 }
 
-.contact {
+.social {
 	position: fixed;
 	bottom: 1rem;
 	left: 1rem;
